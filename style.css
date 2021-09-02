@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+html{
+  overflow-x: hidden;
+}
+body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container {
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+  margin:0 auto;
+  width:100%;
+}
+.first {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 10px 0 0 10px;
+  padding:1rem .2rem;
+}
+.second {
+  background-color: hsl(184, 100%, 22%);
+  padding:1rem .2rem;
+}
+.third {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 10px 10px 0;
+  padding:1rem .2rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-top: 50px;
+}
+
+.attribution a {
+  color: hsl(228, 67%, 56%);
+  font-weight: bold;
+  text-decoration: none;
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 3px;
+}
+.button {
+  border: 2px solid #fff;
+  font-size: 1rem;
+  background-color: white;
+  border-radius: 30px;
+  padding: 10px;
+  width: 150px;
+  cursor: pointer;
+  margin-left: 20px;
+  transition: 1s ease;
+}
+.button:hover {
+  background-color: black;
+  box-shadow: 0 0 28px 10px crimson;
+  color:white;
+}
+.title {
+  margin-left: 30px;
+}
+.paragraph {
+  color: hsla(0, 0%, 100%, 0.75);
+  text-align: left;
+  padding: 10px;
+  line-height: 1.6;
+  margin-left: 20px;
+}
+.img {
+  margin-right: auto;
+  padding: 20px;
+}
+h1 {
+  font-size: 2rem;
+}
