@@ -3,9 +3,6 @@
   border: 0;
   box-sizing: border-box;
 }
-html{
-  overflow-x: hidden;
-}
 body {
   position: absolute;
   top: 50%;
@@ -13,25 +10,23 @@ body {
   transform: translate(-50%, -50%);
 }
 .container {
-  display:flex;
-  justify-content:space-between;
-  align-items: center;
-  margin:0 auto;
-  width:100%;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(auto-fill);
 }
 .first {
   background-color: hsl(31, 77%, 52%);
   border-radius: 10px 0 0 10px;
-  padding:1rem .2rem;
+  padding: 1rem 0.2rem;
 }
 .second {
   background-color: hsl(184, 100%, 22%);
-  padding:1rem .2rem;
+  padding: 1rem 0.2rem;
 }
 .third {
   background-color: hsl(179, 100%, 13%);
   border-radius: 0 10px 10px 0;
-  padding:1rem .2rem;
+  padding: 1rem 0.2rem;
 }
 
 .attribution {
@@ -62,7 +57,7 @@ body {
 .button:hover {
   background-color: black;
   box-shadow: 0 0 28px 10px crimson;
-  color:white;
+  color: white;
 }
 .title {
   margin-left: 30px;
@@ -80,4 +75,22 @@ body {
 }
 h1 {
   font-size: 2rem;
+}
+@media only screen and (min-width: 375px) and (max-width: 700px) {
+  .container {
+    grid-auto-flow: row;
+    min-height: 100%;
+    margin-top:40rem;
+  }
+  .first {
+    width: 100%;
+    border-radius: 0;
+  }
+  .second {
+    width: 100%;
+  }
+  .third {
+    border-radius: 0;
+    width: 100%;
+  }
 }
